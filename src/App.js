@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Redirect from './pages/redirect';
+
+import DDNet from './pages/ddnet';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <div className='flex flex-col min-h-screen'>
         <main className='flex-grow' style={{padding: '0 30px'}}>
           <Routes>
-            <Route path="/" element={<Redirect /> } />
+            <Route path="/ddnet" element={<DDNet /> } />
           </Routes>
         </main>
       </div>
