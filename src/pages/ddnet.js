@@ -16,7 +16,7 @@ function DDNet() {
 
         const platformName = platform === "steam" ? "Steam" : platform === "standalone" ? "DDNet" : null;
         if(name === "존재하지 않는 서버") {
-            setDescription("해당 주소는 존재하지 않는 주소입니다. 다시 확인해 주세요.");
+            return setDescription("해당 주소는 존재하지 않는 주소입니다. 다시 확인해 주세요.");
         } else {
             setDescription(`위 서버에 참가하려면 ${platformName} 열기를 클릭해 주세요.`)
         }
@@ -35,7 +35,7 @@ function DDNet() {
       </Helmet>
       <div className="flex flex-col items-center justify-center h-screen">
         <div>
-            <h3 className="noto-sans-kr-600-normal">{addr}</h3>
+            <h3 className="noto-sans-kr-900-normal">{addr}</h3>
         </div>
         <div>
             <p className="noto-sans-kr-500-normal">{description}</p>
