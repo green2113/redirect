@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import DDNet from './pages/ddnet';
+import Err from './pages/error';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <main className='flex-grow' style={{padding: '0 30px'}}>
           <Routes>
             <Route path="/ddnet" element={<DDNet /> } />
+            <Route path="*" element={<Err />} />
           </Routes>
         </main>
       </div>
